@@ -135,11 +135,17 @@ def connectIndexingServer(client_bind_addr, server_addr):
             
             elif json_data["type"] == "QUERY-RES":
                 query_file = json_data["file"]
-                peer_list = json_data["msg"]
+                query_filesize = json_data["filesize"]
+                peer_list = json_data["peerlist"]
+                # print(query_file, query_filesize)
+                # print(peer_list)
                 if len(peer_list) > 0:
+                    print("Start to download files in parallel")
+
                     while True:
                         for i, peer in enumerate(peer_list):
-                            print(str(i+1) + ") " + peer)
+                            print(peer)
+                        
                         print("0) exit")
                         print("Choose a peer to download:")
                         user_input = input("> ")

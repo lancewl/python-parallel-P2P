@@ -10,6 +10,7 @@ FORMAT = "utf-8"
 SERVER_DATA_PATH = "./"
 
 peer_table = {}
+filesize_table = {}
 cond = threading.Condition()
 
 def clientHandler(conn, addr):
@@ -37,9 +38,11 @@ def clientHandler(conn, addr):
             # register file list from peers
             print(f"[REGISTER] {full_addr} registerd")
             cond.acquire()
-            peer_table[full_addr] = zip(json_data["filelist"], json_data['filesizelist'])
-            print(list(peer_table[full_addr]))
-            # print(peer_table)
+            peer_table[full_addr] = json_data["filelist"]
+            for i in range(len(json_data['filelist'])):
+                filesize_table[json_data['filelist'][i]] = json_data['filesizelist'][i]
+            print(peer_table)
+            print(filesize_table)
             cond.release()
         
         elif json_data["action"] == "UPDATE":
@@ -60,7 +63,7 @@ def clientHandler(conn, addr):
                 if peer != full_addr and query_file in filelist:
                     res.append(peer)
             cond.release()
-            conn.send(json.dumps({"type": "QUERY-RES", "msg": res, "file": query_file}).encode(FORMAT))
+            conn.send(json.dumps({"type": "QUERY-RES", "peerlist": res, "file": query_file, "filesize": filesize_table[query_file]}).encode(FORMAT))
 
     conn.close()
 
