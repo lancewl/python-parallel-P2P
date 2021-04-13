@@ -9,7 +9,7 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
 FORMAT = "utf-8"
-SIZE = 1024
+CHUNKSIZE = 1024
 
 def watchFolder(conn):
     # Keep watching the folder for any change
@@ -60,17 +60,17 @@ def downloadFile(addr, filename):
 def uploadHandler(conn, addr):
     full_addr = addr[0] + ":" + str(addr[1])
 
-    data = conn.recv(SIZE).decode(FORMAT)
+    data = conn.recv(CHUNKSIZE).decode(FORMAT)
     json_data = json.loads(data)
     filename = json_data["file"]
 
     print(f"[UPLOADING] {full_addr} is downloading {filename}")
 
     f = open (filename, "rb")
-    l = f.read(SIZE)
+    l = f.read(CHUNKSIZE)
     while (l):
         conn.send(l)
-        l = f.read(SIZE)
+        l = f.read(CHUNKSIZE)
     conn.close()
 
 def peerServer(peer_server_addr):
@@ -122,7 +122,7 @@ def connectIndexingServer(client_bind_addr, server_addr):
 
     while True:
         if isvalid:
-            data = conn.recv(SIZE).decode(FORMAT)
+            data = conn.recv(CHUNKSIZE).decode(FORMAT)
             
             if not data:
                 print("[ERROR] Disconnect from indexing server")
