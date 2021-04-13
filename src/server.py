@@ -41,8 +41,8 @@ def clientHandler(conn, addr):
             peer_table[full_addr] = json_data["filelist"]
             for i in range(len(json_data['filelist'])):
                 filesize_table[json_data['filelist'][i]] = json_data['filesizelist'][i]
-            print(peer_table)
-            print(filesize_table)
+            # print(peer_table)
+            # print(filesize_table)
             cond.release()
         
         elif json_data["action"] == "UPDATE":

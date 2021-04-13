@@ -9,7 +9,7 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
 FORMAT = "utf-8"
-CHUNKSIZE = 1024
+CHUNKSIZE = 65536 # 64 KB
 
 def watchFolder(conn):
     # Keep watching the folder for any change
@@ -40,20 +40,19 @@ def watchFolder(conn):
 
     folder_observer.start()
 
-def downloadFile(addr, filename):
+def downloadFile(addr, filename, offset):
     # Download file from other peer
-    print(f"[DOWNLOADING] Downloading {filename} from {addr}")
+    print(f"[DOWNLOADING] Downloading {filename} from {addr} (offset: {offset})")
     downloader = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     downloader.connect(addr)
 
-    downloader.send(json.dumps({"file": filename}).encode(FORMAT))
+    downloader.send(json.dumps({"file": filename, "offset": offset}).encode(FORMAT))
 
-    l = downloader.recv(1024)
+    chunk = downloader.recv(CHUNKSIZE)
 
     f = open(filename,'wb') #open in binary
-    while (l):
-            f.write(l)
-            l = downloader.recv(1024)
+    f.seek(offset)
+    f.write(chunk)
     f.close()
     downloader.close()
 
@@ -63,14 +62,14 @@ def uploadHandler(conn, addr):
     data = conn.recv(CHUNKSIZE).decode(FORMAT)
     json_data = json.loads(data)
     filename = json_data["file"]
+    offset = json_data["offset"]
 
-    print(f"[UPLOADING] {full_addr} is downloading {filename}")
+    print(f"[UPLOADING] {full_addr} is downloading {filename} (offset: {offset})")
 
     f = open (filename, "rb")
-    l = f.read(CHUNKSIZE)
-    while (l):
-        conn.send(l)
-        l = f.read(CHUNKSIZE)
+    f.seek(offset)
+    chunk = f.read(CHUNKSIZE)
+    conn.send(chunk)
     conn.close()
 
 def peerServer(peer_server_addr):
@@ -135,34 +134,28 @@ def connectIndexingServer(client_bind_addr, server_addr):
             
             elif json_data["type"] == "QUERY-RES":
                 query_file = json_data["file"]
-                query_filesize = json_data["filesize"]
+                query_filesize = int(json_data["filesize"])
                 peer_list = json_data["peerlist"]
                 # print(query_file, query_filesize)
                 # print(peer_list)
                 if len(peer_list) > 0:
                     print("Start to download files in parallel")
+                    thread_list = []
+                    N = len(peer_list)
+                    i = 0
 
-                    while True:
-                        for i, peer in enumerate(peer_list):
-                            print(peer)
-                        
-                        print("0) exit")
-                        print("Choose a peer to download:")
-                        user_input = input("> ")
+                    while i * CHUNKSIZE < query_filesize + CHUNKSIZE: # the last chunk needs to be included
+                        peer_addr = peer_list[i % N].split(":")
+                        download_addr = (peer_addr[0], int(peer_addr[1])+1)
+                        thread = threading.Thread(target=downloadFile, args=(download_addr, query_file, i * CHUNKSIZE))
+                        thread.daemon = True
+                        thread.start()
+                        thread_list.append(thread)
+                        i += 1
+                    
+                    for t in thread_list:
+                        t.join()
 
-                        if user_input[0].isnumeric():
-                            i = int(user_input[0])
-                            if i == 0:
-                                break
-                            elif i > 0 and i <= len(peer_list):
-                                peer_addr = peer_list[i-1].split(":")
-                                download_addr = (peer_addr[0], int(peer_addr[1])+1)
-                                downloadFile(download_addr, query_file)
-                                break
-                            else:
-                                print("Wrong index please try again")
-                        else:
-                            print("Invalid input please try again")
                 else:
                     print("No peers found for the file.")
 
