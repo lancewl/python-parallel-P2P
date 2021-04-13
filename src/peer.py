@@ -4,9 +4,11 @@ import socket
 import threading
 import json
 import time
+import datetime
 import click
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
+import hashlib
 
 FORMAT = "utf-8"
 CHUNKSIZE = 65536 # 64 KB
@@ -42,7 +44,8 @@ def watchFolder(conn):
 
 def downloadFile(addr, filename, offset):
     # Download file from other peer
-    print(f"[DOWNLOADING] Downloading {filename} from {addr} (offset: {offset})")
+    timestamp = datetime.datetime.now()
+    print(f"[DOWNLOADING] Downloading {filename} from {addr} (offset: {offset}) - {timestamp}")
     downloader = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     downloader.connect(addr)
 
@@ -63,8 +66,8 @@ def uploadHandler(conn, addr):
     json_data = json.loads(data)
     filename = json_data["file"]
     offset = json_data["offset"]
-
-    print(f"[UPLOADING] {full_addr} is downloading {filename} (offset: {offset})")
+    timestamp = datetime.datetime.now()
+    print(f"[UPLOADING] {full_addr} is downloading {filename} (offset: {offset}) - {timestamp}")
 
     f = open (filename, "rb")
     f.seek(offset)
@@ -103,12 +106,16 @@ def connectIndexingServer(client_bind_addr, server_addr):
 
     files = os.listdir("./")
     filesizes = []
+    filemd5 = []
     for f in files:
         filesizes.append(os.path.getsize(f))
+        md5 = hashlib.md5(open(f,'rb').read()).hexdigest()
+        filemd5.append(md5)
     register_data = {
         "action": "REGISTER",
         "filelist": files,
-        "filesizelist": filesizes
+        "filesizelist": filesizes,
+        "md5list": filemd5
     }
     register_json = json.dumps(register_data)
     conn.send(register_json.encode(FORMAT))
@@ -135,11 +142,12 @@ def connectIndexingServer(client_bind_addr, server_addr):
             elif json_data["type"] == "QUERY-RES":
                 query_file = json_data["file"]
                 query_filesize = int(json_data["filesize"])
+                query_filemd5 = json_data["md5"]
                 peer_list = json_data["peerlist"]
                 # print(query_file, query_filesize)
                 # print(peer_list)
                 if len(peer_list) > 0:
-                    print("Start to download files in parallel")
+                    print("Start to download files in parallel...")
                     thread_list = []
                     N = len(peer_list)
                     i = 0
@@ -155,6 +163,12 @@ def connectIndexingServer(client_bind_addr, server_addr):
                     
                     for t in thread_list:
                         t.join()
+                    
+                    downloadmd5 = hashlib.md5(open(query_file,'rb').read()).hexdigest()
+                    if downloadmd5 == query_filemd5:
+                        print("Download successful! MD5 match!")
+                    else:
+                        print("Download falied. MD5 not match.")
 
                 else:
                     print("No peers found for the file.")

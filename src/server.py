@@ -11,6 +11,7 @@ SERVER_DATA_PATH = "./"
 
 peer_table = {}
 filesize_table = {}
+md5_table = {}
 cond = threading.Condition()
 
 def clientHandler(conn, addr):
@@ -41,6 +42,7 @@ def clientHandler(conn, addr):
             peer_table[full_addr] = json_data["filelist"]
             for i in range(len(json_data['filelist'])):
                 filesize_table[json_data['filelist'][i]] = json_data['filesizelist'][i]
+                md5_table[json_data['filelist'][i]] = json_data['md5list'][i]
             # print(peer_table)
             # print(filesize_table)
             cond.release()
@@ -63,7 +65,7 @@ def clientHandler(conn, addr):
                 if peer != full_addr and query_file in filelist:
                     res.append(peer)
             cond.release()
-            conn.send(json.dumps({"type": "QUERY-RES", "peerlist": res, "file": query_file, "filesize": filesize_table[query_file]}).encode(FORMAT))
+            conn.send(json.dumps({"type": "QUERY-RES", "peerlist": res, "file": query_file, "filesize": filesize_table[query_file], "md5": md5_table[query_file]}).encode(FORMAT))
 
     conn.close()
 
