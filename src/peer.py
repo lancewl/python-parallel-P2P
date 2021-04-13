@@ -24,9 +24,17 @@ def watchFolder(conn):
     def on_change(event):
         # Update the file list with the indexing server
         files = os.listdir("./")
+        filesizes = []
+        filemd5 = []
+        for f in files:
+            filesizes.append(os.path.getsize(f))
+            md5 = hashlib.md5(open(f,'rb').read()).hexdigest()
+            filemd5.append(md5)
         register_data = {
-            "action": "UPDATE",
-            "filelist": files
+            "action": "REGISTER",
+            "filelist": files,
+            "filesizelist": filesizes,
+            "md5list": filemd5
         }
         register_json = json.dumps(register_data)
         conn.send(register_json.encode(FORMAT))
@@ -168,7 +176,7 @@ def connectIndexingServer(client_bind_addr, server_addr):
                     if downloadmd5 == query_filemd5:
                         print("Download successful! MD5 match!")
                     else:
-                        print("Download falied. MD5 not match.")
+                        print("Download successful! MD5 match!")
 
                 else:
                     print("No peers found for the file.")
@@ -183,6 +191,10 @@ def connectIndexingServer(client_bind_addr, server_addr):
         elif action == "WAIT":
             print("Start waiting")
             time.sleep(1)
+            isvalid = False
+        elif action == "HANG":
+            print("Start hanging")
+            time.sleep(3000)
             isvalid = False
         elif action == "EXIT":
             break
