@@ -103,9 +103,13 @@ def connectIndexingServer(client_bind_addr, server_addr):
     thread.start()
 
     files = os.listdir("./")
+    filesizes = []
+    for f in files:
+        filesizes.append(os.path.getsize(f))
     register_data = {
         "action": "REGISTER",
-        "filelist": files
+        "filelist": files,
+        "filesizelist": filesizes
     }
     register_json = json.dumps(register_data)
     conn.send(register_json.encode(FORMAT))

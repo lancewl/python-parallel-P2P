@@ -37,7 +37,8 @@ def clientHandler(conn, addr):
             # register file list from peers
             print(f"[REGISTER] {full_addr} registerd")
             cond.acquire()
-            peer_table[full_addr] = json_data["filelist"]
+            peer_table[full_addr] = zip(json_data["filelist"], json_data['filesizelist'])
+            print(list(peer_table[full_addr]))
             # print(peer_table)
             cond.release()
         
