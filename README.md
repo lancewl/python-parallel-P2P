@@ -65,14 +65,8 @@ Above command will start a peer node and host on port 50001.
 
 ### Evaluation Scripts
 
-The `eval2.sh` will evaluate the performance of QUERY action under different number of peers.
+The `eval.sh` will evaluate the transfer speed under different number of peers holding the target file.
 
 ```bash
 Usage: ./eval.sh [Peer Count]
-```
-
-The `eval3.sh` will evaluate the performance of downloading files from other peers under different file size.
-
-```bash
-Usage: ./eval.sh [File Size]
 ```
