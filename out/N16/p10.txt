@@ -1,0 +1,16 @@
+[STARTING] Peer Server is starting
+[LISTENING] Peer Server is listening on 127.0.0.1:40021
+Welcome to indexing server!
+> 
+Aborted!
+Start hanging
+[UPLOADING] 127.0.0.1:54209 is downloading data1.txt (offset: 65536) - 2021-04-13 16:33:11.867838
+[UPLOADING] 127.0.0.1:54226 is downloading data2.txt (offset: 65536) - 2021-04-13 16:33:11.880699
+[UPLOADING] 127.0.0.1:54243 is downloading data3.txt (offset: 65536) - 2021-04-13 16:33:11.889933
+[UPLOADING] 127.0.0.1:54260 is downloading data4.txt (offset: 65536) - 2021-04-13 16:33:11.901299
+[UPLOADING] 127.0.0.1:54278 is downloading data5.txt (offset: 65536) - 2021-04-13 16:33:11.913022
+[UPLOADING] 127.0.0.1:54294 is downloading data6.txt (offset: 65536) - 2021-04-13 16:33:11.920590
+[UPLOADING] 127.0.0.1:54311 is downloading data7.txt (offset: 65536) - 2021-04-13 16:33:11.929203
+[UPLOADING] 127.0.0.1:54328 is downloading data8.txt (offset: 65536) - 2021-04-13 16:33:11.939660
+[UPLOADING] 127.0.0.1:54344 is downloading data9.txt (offset: 65536) - 2021-04-13 16:33:11.951643
+[UPLOADING] 127.0.0.1:54362 is downloading data10.txt (offset: 65536) - 2021-04-13 16:33:11.961897

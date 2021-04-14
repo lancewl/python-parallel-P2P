@@ -1,0 +1,195 @@
+[STARTING] Peer Server is starting
+[LISTENING] Peer Server is listening on 127.0.0.1:40001
+Welcome to indexing server!
+> Start waiting
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.866868
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.867192
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.867616
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.867961
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.868415
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.868839
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.869260
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.869698
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.871044
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.871558
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.872306
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.872725
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.873202
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.873485
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.873767
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.874128
+[DOWNLOADING] Downloading data1.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.874661
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.880093
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.880233
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.880360
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.880480
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.880685
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.880916
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.881469
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.881845
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.882163
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.882407
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.882559
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.882948
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.883268
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.883646
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.883897
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.884329
+[DOWNLOADING] Downloading data2.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.884557
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.889146
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.889426
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.889634
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.889888
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.890272
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.890794
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.891100
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.891331
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.891954
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.892485
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.892829
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.893188
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.893433
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.893757
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.894514
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.894804
+[DOWNLOADING] Downloading data3.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.895200
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.900234
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.900394
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.900520
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.900700
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.900840
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.901170
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.901802
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.902046
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.902921
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.903986
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.904764
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.904928
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.905196
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.905335
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.906188
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.907082
+[DOWNLOADING] Downloading data4.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.907282
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.912153
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.912313
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.912429
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.912663
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.912840
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.913114
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.913471
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.913685
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.914134
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.914518
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.914988
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.916430
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.916680
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.916839
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.917083
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.917302
+[DOWNLOADING] Downloading data5.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.917800
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.919948
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.920151
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.920462
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.920761
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.921061
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.921513
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.921799
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.922227
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.922878
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.923236
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.923721
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.923853
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.924339
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.924529
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.924932
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.926177
+[DOWNLOADING] Downloading data6.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.927064
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.928726
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.928855
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.929020
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.929264
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.929857
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.930210
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.930720
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.930991
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.931606
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.931733
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.932314
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.932513
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.932944
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.933318
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.933622
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.934060
+[DOWNLOADING] Downloading data7.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.934581
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.939190
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.939325
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.939449
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.939637
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.939927
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.940188
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.940386
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.941157
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.941523
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.941790
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.942354
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.942733
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.943325
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.943599
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.943877
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.944214
+[DOWNLOADING] Downloading data8.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.944563
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.951047
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.951264
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.951456
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.951630
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.951787
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.952053
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.952595
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.953126
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.953653
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.954004
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.954255
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.954428
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.955078
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.955418
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.955782
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.956581
+[DOWNLOADING] Downloading data9.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.957182
+Download successful! MD5 match!
+> Start to download files in parallel...
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40005) (offset: 0) - 2021-04-13 16:33:11.961188
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40021) (offset: 65536) - 2021-04-13 16:33:11.961401
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40025) (offset: 131072) - 2021-04-13 16:33:11.961492
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40023) (offset: 196608) - 2021-04-13 16:33:11.961658
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40009) (offset: 262144) - 2021-04-13 16:33:11.961882
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40007) (offset: 327680) - 2021-04-13 16:33:11.962125
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40015) (offset: 393216) - 2021-04-13 16:33:11.962409
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40017) (offset: 458752) - 2021-04-13 16:33:11.962609
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40013) (offset: 524288) - 2021-04-13 16:33:11.963015
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40029) (offset: 589824) - 2021-04-13 16:33:11.963260
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40031) (offset: 655360) - 2021-04-13 16:33:11.963543
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40027) (offset: 720896) - 2021-04-13 16:33:11.964204
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40011) (offset: 786432) - 2021-04-13 16:33:11.964752
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40003) (offset: 851968) - 2021-04-13 16:33:11.965135
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40033) (offset: 917504) - 2021-04-13 16:33:11.965392
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40019) (offset: 983040) - 2021-04-13 16:33:11.965602
+[DOWNLOADING] Downloading data10.txt from ('127.0.0.1', 40005) (offset: 1048576) - 2021-04-13 16:33:11.965897
+Download successful! MD5 match!
+> Disconnected from the server.

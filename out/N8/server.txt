@@ -1,0 +1,56 @@
+
+Aborted!
+[STARTING] Indexing Server is starting
+[LISTENING] Indexing Server is listening on 127.0.0.1:5000
+[NEW CONNECTION] ('127.0.0.1', 40006) connected.
+[ACTIVE CONNECTIONS] 1
+[NEW CONNECTION] ('127.0.0.1', 40008) connected.
+[ACTIVE CONNECTIONS] 2
+[NEW CONNECTION] ('127.0.0.1', 40012) connected.
+[ACTIVE CONNECTIONS] 3
+[NEW CONNECTION] ('127.0.0.1', 40004) connected.
+[ACTIVE CONNECTIONS] 4
+[NEW CONNECTION] ('127.0.0.1', 40016) connected.
+[ACTIVE CONNECTIONS] 5
+[NEW CONNECTION] ('127.0.0.1', 40000) connected.
+[ACTIVE CONNECTIONS] 6
+[NEW CONNECTION] ('127.0.0.1', 40014) connected.
+[REGISTER] 127.0.0.1:40000 registerd
+[ACTIVE CONNECTIONS] 7
+[NEW CONNECTION] ('127.0.0.1', 40010) connected.
+[ACTIVE CONNECTIONS] 8
+[REGISTER] 127.0.0.1:40012 registerd
+[REGISTER] 127.0.0.1:40006 registerd
+[REGISTER] 127.0.0.1:40008 registerd
+[NEW CONNECTION] ('127.0.0.1', 40002) connected.
+[ACTIVE CONNECTIONS] 9
+[REGISTER] 127.0.0.1:40004 registerd
+[REGISTER] 127.0.0.1:40016 registerd
+[REGISTER] 127.0.0.1:40010 registerd
+[REGISTER] 127.0.0.1:40014 registerd
+[REGISTER] 127.0.0.1:40002 registerd
+[QUERY] 127.0.0.1:40000 query data1.txt
+[QUERY] 127.0.0.1:40000 query data2.txt
+[REGISTER] 127.0.0.1:40000 registerd
+[QUERY] 127.0.0.1:40000 query data3.txt
+[QUERY] 127.0.0.1:40000 query data4.txt
+[REGISTER] 127.0.0.1:40000 registerd
+[QUERY] 127.0.0.1:40000 query data5.txt
+[REGISTER] 127.0.0.1:40000 registerd
+[QUERY] 127.0.0.1:40000 query data6.txt
+[REGISTER] 127.0.0.1:40000 registerd
+[QUERY] 127.0.0.1:40000 query data7.txt
+[QUERY] 127.0.0.1:40000 query data8.txt
+[REGISTER] 127.0.0.1:40000 registerd
+[QUERY] 127.0.0.1:40000 query data9.txt
+[REGISTER] 127.0.0.1:40000 registerd
+[QUERY] 127.0.0.1:40000 query data10.txt
+[UNREGISTER] 127.0.0.1:40000 unrigistered
+[UNREGISTER] 127.0.0.1:40002 unrigistered
+[UNREGISTER] 127.0.0.1:40014 unrigistered
+[UNREGISTER] 127.0.0.1:40004 unrigistered
+[UNREGISTER] 127.0.0.1:40010 unrigistered
+[UNREGISTER] 127.0.0.1:40012 unrigistered
+[UNREGISTER] 127.0.0.1:40006 unrigistered
+[UNREGISTER] 127.0.0.1:40008 unrigistered
+[UNREGISTER] 127.0.0.1:40016 unrigistered

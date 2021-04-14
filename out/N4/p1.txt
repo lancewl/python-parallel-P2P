@@ -1,0 +1,46 @@
+[STARTING] Peer Server is starting
+[LISTENING] Peer Server is listening on 127.0.0.1:40003
+Welcome to indexing server!
+> 
+Aborted!
+Start hanging
+[UPLOADING] 127.0.0.1:53806 is downloading data1.txt (offset: 65536) - 2021-04-13 16:28:33.178695
+[UPLOADING] 127.0.0.1:53810 is downloading data1.txt (offset: 327680) - 2021-04-13 16:28:33.180515
+[UPLOADING] 127.0.0.1:53814 is downloading data1.txt (offset: 589824) - 2021-04-13 16:28:33.181847
+[UPLOADING] 127.0.0.1:53818 is downloading data1.txt (offset: 851968) - 2021-04-13 16:28:33.183319
+[UPLOADING] 127.0.0.1:53824 is downloading data2.txt (offset: 65536) - 2021-04-13 16:28:33.190334
+[UPLOADING] 127.0.0.1:53827 is downloading data2.txt (offset: 327680) - 2021-04-13 16:28:33.190900
+[UPLOADING] 127.0.0.1:53832 is downloading data2.txt (offset: 589824) - 2021-04-13 16:28:33.192698
+[UPLOADING] 127.0.0.1:53835 is downloading data2.txt (offset: 851968) - 2021-04-13 16:28:33.194178
+[UPLOADING] 127.0.0.1:53840 is downloading data3.txt (offset: 65536) - 2021-04-13 16:28:33.200627
+[UPLOADING] 127.0.0.1:53844 is downloading data3.txt (offset: 327680) - 2021-04-13 16:28:33.201446
+[UPLOADING] 127.0.0.1:53848 is downloading data3.txt (offset: 589824) - 2021-04-13 16:28:33.203488
+[UPLOADING] 127.0.0.1:53852 is downloading data3.txt (offset: 851968) - 2021-04-13 16:28:33.207993
+[UPLOADING] 127.0.0.1:53857 is downloading data4.txt (offset: 65536) - 2021-04-13 16:28:33.213189
+[UPLOADING] 127.0.0.1:53861 is downloading data4.txt (offset: 327680) - 2021-04-13 16:28:33.214601
+[UPLOADING] 127.0.0.1:53865 is downloading data4.txt (offset: 589824) - 2021-04-13 16:28:33.216343
+[UPLOADING] 127.0.0.1:53869 is downloading data4.txt (offset: 851968) - 2021-04-13 16:28:33.219515
+[UPLOADING] 127.0.0.1:53874 is downloading data5.txt (offset: 65536) - 2021-04-13 16:28:33.225346
+[UPLOADING] 127.0.0.1:53878 is downloading data5.txt (offset: 327680) - 2021-04-13 16:28:33.226804
+[UPLOADING] 127.0.0.1:53882 is downloading data5.txt (offset: 589824) - 2021-04-13 16:28:33.228125
+[UPLOADING] 127.0.0.1:53886 is downloading data5.txt (offset: 851968) - 2021-04-13 16:28:33.231401
+[UPLOADING] 127.0.0.1:53892 is downloading data6.txt (offset: 65536) - 2021-04-13 16:28:33.235225
+[UPLOADING] 127.0.0.1:53895 is downloading data6.txt (offset: 327680) - 2021-04-13 16:28:33.236203
+[UPLOADING] 127.0.0.1:53899 is downloading data6.txt (offset: 589824) - 2021-04-13 16:28:33.237999
+[UPLOADING] 127.0.0.1:53903 is downloading data6.txt (offset: 851968) - 2021-04-13 16:28:33.240340
+[UPLOADING] 127.0.0.1:53908 is downloading data7.txt (offset: 65536) - 2021-04-13 16:28:33.244124
+[UPLOADING] 127.0.0.1:53912 is downloading data7.txt (offset: 327680) - 2021-04-13 16:28:33.244805
+[UPLOADING] 127.0.0.1:53916 is downloading data7.txt (offset: 589824) - 2021-04-13 16:28:33.246624
+[UPLOADING] 127.0.0.1:53920 is downloading data7.txt (offset: 851968) - 2021-04-13 16:28:33.248062
+[UPLOADING] 127.0.0.1:53925 is downloading data8.txt (offset: 65536) - 2021-04-13 16:28:33.253743
+[UPLOADING] 127.0.0.1:53929 is downloading data8.txt (offset: 327680) - 2021-04-13 16:28:33.254670
+[UPLOADING] 127.0.0.1:53933 is downloading data8.txt (offset: 589824) - 2021-04-13 16:28:33.256365
+[UPLOADING] 127.0.0.1:53937 is downloading data8.txt (offset: 851968) - 2021-04-13 16:28:33.258241
+[UPLOADING] 127.0.0.1:53942 is downloading data9.txt (offset: 65536) - 2021-04-13 16:28:33.264241
+[UPLOADING] 127.0.0.1:53945 is downloading data9.txt (offset: 327680) - 2021-04-13 16:28:33.265511
+[UPLOADING] 127.0.0.1:53950 is downloading data9.txt (offset: 589824) - 2021-04-13 16:28:33.266708
+[UPLOADING] 127.0.0.1:53954 is downloading data9.txt (offset: 851968) - 2021-04-13 16:28:33.268188
+[UPLOADING] 127.0.0.1:53959 is downloading data10.txt (offset: 65536) - 2021-04-13 16:28:33.274019
+[UPLOADING] 127.0.0.1:53963 is downloading data10.txt (offset: 327680) - 2021-04-13 16:28:33.274610
+[UPLOADING] 127.0.0.1:53967 is downloading data10.txt (offset: 589824) - 2021-04-13 16:28:33.276110
+[UPLOADING] 127.0.0.1:53971 is downloading data10.txt (offset: 851968) - 2021-04-13 16:28:33.277887
